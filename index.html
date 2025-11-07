@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>リダイレクト中...</title>
+<script>
+  // 現在時刻を取得
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const day = now.getDate();
+  const hour = now.getHours();
+  const minute = now.getMinutes();
+  const mn1 = Math.floor(minute / 10);
+  const mn2 = minute % 10;
+
+  // ジョルダンの検索URLを組み立て
+  const url = `https://www.jorudan.co.jp/norikae/cgi/nori.cgi?eki1=%E5%88%88%E8%B0%B7&eki2=%E5%90%8D%E5%8F%A4%E5%B1%8B&via_on=-1&eki3=&eki4=&eki5=&eki6=&Dyy=${year}&Dmm=${month}&Ddd=${day}&Dhh=${hour}&Dmn1=${mn1}&Dmn2=${mn2}&Cway=0&Cfp=1&Czu=2&C7=1&C2=0&C3=0&C1=0&cartaxy=1&bikeshare=1&sort=rec&C4=5&C5=0&C6=2&S=%E6%A4%9C%E7%B4%A2&Cmap1=&rf=nr&pg=0&eok1=R-&eok2=R-&eok3=&eok4=&eok5=&eok6=&Csg=1`;
+
+  // 自動リダイレクト
+ head>
+<body>
+<p>リダイレクト中です。しばらくお待ちください...</p>
+</body>
+</html>
